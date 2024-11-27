@@ -1,6 +1,6 @@
 const fetchPlayers = async () => {
     try {
-        const response = await axios.get(`http://localhost:3001/players`);
+        const response = await axios.get(`https://baseball-fullstack-server.onrender.com/players`);
         const players = response.data;
         populatePlayersTable(players);
     } catch (error) {

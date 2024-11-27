@@ -1,6 +1,6 @@
 const fetchTeams = async () => {
     try {
-        const response = await axios.get('http://localhost:3001/teams'); 
+        const response = await axios.get('https://baseball-fullstack-server.onrender.com/teams'); 
         const teams = response.data; 
         console.log(response.data);
 

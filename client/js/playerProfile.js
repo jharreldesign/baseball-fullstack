@@ -9,7 +9,7 @@ const fetchPlayerProfile = async () => {
     }
 
     try {
-        const response = await axios.get(`http://localhost:3001/players/${playerId}`);
+        const response = await axios.get(`https://baseball-fullstack-server.onrender.com/players/${playerId}`);
         const player = response.data;
 
         if (player) {

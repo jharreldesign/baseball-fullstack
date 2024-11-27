@@ -12,7 +12,7 @@ const handleTeamFormSubmit = async (event) => {
   };
 
   try {
-    const response = await axios.post('http://localhost:3001/teams', teamData);
+    const response = await axios.post('https://baseball-fullstack-server.onrender.com/teams', teamData);
     document.getElementById('message').textContent = 'Team created successfully!'; 
     document.getElementById('teamForm').reset(); 
   } catch (error) {

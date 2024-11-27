@@ -9,7 +9,7 @@ document.getElementById('scheduleForm').addEventListener('submit', async (event)
     const schedule = { gameDate, homeTeam, awayTeam, ballpark };
   
     try {
-      const response = await fetch('http://localhost:3001/schedules', {
+      const response = await fetch('https://baseball-fullstack-server.onrender.com/schedules', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

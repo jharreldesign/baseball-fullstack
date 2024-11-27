@@ -17,7 +17,7 @@ const fetchPlayers = async () => {
 };
 
 const getPlayers = async () => {
-    const response = await axios.get('http://localhost:3001/players');
+    const response = await axios.get('https://baseball-fullstack-server.onrender.com/players');
     console.log(response.data);
     return response.data; 
 };

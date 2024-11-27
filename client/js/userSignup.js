@@ -8,7 +8,7 @@ document.getElementById('userForm').addEventListener('submit', async (event) => 
     const user = { name, email, password };
   
     try {
-      const response = await fetch('http://localhost:3001/users', {
+      const response = await fetch('https://baseball-fullstack-server.onrender.com/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

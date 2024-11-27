@@ -1,6 +1,6 @@
 const fetchTeams = async () => {
   try {
-      const response = await axios.get('http://localhost:3001/teams'); 
+      const response = await axios.get('https://baseball-fullstack-server.onrender.com/teams'); 
       const teams = response.data;
 
       const teamSelect = document.getElementById('team');
@@ -37,7 +37,7 @@ const handleFormSubmit = async (event) => {
   };
 
   try {
-      const response = await axios.post('http://localhost:3001/players', playerData);
+      const response = await axios.post('https://baseball-fullstack-server.onrender.com/players', playerData);
       document.getElementById('message').textContent = 'Player created successfully!'; 
       document.getElementById('playerForm').reset(); 
   } catch (error) {

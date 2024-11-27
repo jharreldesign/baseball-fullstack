@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let teams = []; 
 
     console.log('Attempting to fetch teams...');
-    axios.get('http://localhost:3001/teams')
+    axios.get('https://baseball-fullstack-server.onrender.com/teams')
         .then(response => {
             console.log('Teams fetched:', response.data);
             teams = response.data; 
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         console.log('Submitting game data:', gameData); 
 
-        axios.post('http://localhost:3001/schedules', gameData)
+        axios.post('https://baseball-fullstack-server.onrender.com/schedules', gameData)
             .then(response => {
                 console.log('Game scheduled successfully:', response.data);
                 const messageElement = document.getElementById('message');

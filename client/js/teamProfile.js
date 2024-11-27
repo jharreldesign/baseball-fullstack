@@ -8,14 +8,14 @@ const fetchTeamProfileAndPlayers = async () => {
     }
 
     try {
-        const teamResponse = await axios.get(`http://localhost:3001/teams/${teamId}`);
+        const teamResponse = await axios.get(`https://baseball-fullstack-server.onrender.com/teams/${teamId}`);
         const team = teamResponse.data;
 
         console.log('Fetched team:', team);
         if (team) {
             updateTeamProfileUI(team);
 
-            const playersResponse = await axios.get(`http://localhost:3001/players`);
+            const playersResponse = await axios.get(`https://baseball-fullstack-server.onrender.com/players`);
             const players = playersResponse.data;
 
             console.log('Fetched players:', players);
@@ -76,7 +76,7 @@ document.getElementById('deleteTeamButton').addEventListener('click', async () =
     const confirmation = confirm('Are you sure you want to delete this team?');
     if (confirmation) {
         try {
-            await axios.delete(`http://localhost:3001/teams/${teamId}`);
+            await axios.delete(`https://baseball-fullstack-server.onrender.com/teams/${teamId}`);
             alert('Team deleted successfully.');
             window.location.href = './teams.html'; // Redirect after deletion
         } catch (error) {

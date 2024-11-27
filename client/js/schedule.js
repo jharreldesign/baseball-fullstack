@@ -1,6 +1,6 @@
 const fetchSchedules = async () => {
   try {
-    const response = await axios.get("http://localhost:3001/schedules");
+    const response = await axios.get("https://baseball-fullstack-server.onrender.com/schedules");
     const schedules = response.data;
 
     const schedulesContainer = document.getElementById("schedulesContainer");

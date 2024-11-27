@@ -1,6 +1,6 @@
 const fetchTeams = async () => {
   try {
-    const response = await axios.get('http://localhost:3001/teams');
+    const response = await axios.get('https://baseball-fullstack-server.onrender.com/teams');
     const teams = response.data;
 
     const teamsContainer = document.getElementById('teamsContainer');
@@ -24,7 +24,7 @@ const fetchTeams = async () => {
 
 const fetchSchedules = async () => {
   try {
-    const response = await axios.get('http://localhost:3001/schedules');
+    const response = await axios.get('https://baseball-fullstack-server.onrender.com/schedules');
     const schedules = response.data;
     console.log(response.data);
 
@@ -57,7 +57,7 @@ const fetchSchedules = async () => {
 
 const fetchPlayers = async () => {
   try {
-    const response = await axios.get('http://localhost:3001/players');
+    const response = await axios.get('https://baseball-fullstack-server.onrender.com/players');
     const players = response.data;
     console.log('Fetched players:', players); 
 

@@ -12,7 +12,7 @@ const fetchGameDetails = async () => {
     }
 
     try {
-        const response = await axios.get(`http://localhost:3001/schedules/${gameId}`);
+        const response = await axios.get(`https://baseball-fullstack-server.onrender.com/schedules/${gameId}`);
         const game = response.data;
 
         if (!game) {
@@ -20,8 +20,8 @@ const fetchGameDetails = async () => {
             return;
         }
 
-        const homeTeamResponse = await axios.get(`http://localhost:3001/teams/${game.homeTeam._id}`);
-        const awayTeamResponse = await axios.get(`http://localhost:3001/teams/${game.awayTeam._id}`);
+        const homeTeamResponse = await axios.get(`https://baseball-fullstack-server.onrender.com/teams/${game.homeTeam._id}`);
+        const awayTeamResponse = await axios.get(`https://baseball-fullstack-server.onrender.com/teams/${game.awayTeam._id}`);
         
         const homeTeam = homeTeamResponse.data;
         const awayTeam = awayTeamResponse.data;
@@ -36,7 +36,7 @@ const fetchGameDetails = async () => {
 
 const fetchPlayersForTeams = async (homeTeamId, awayTeamId) => {
     try {
-        const playersResponse = await axios.get('http://localhost:3001/players');
+        const playersResponse = await axios.get('https://baseball-fullstack-server.onrender.com/players');
         const players = playersResponse.data;
 
         const homeTeamPlayers = players.filter(player => player.currentTeam && player.currentTeam._id === homeTeamId);
