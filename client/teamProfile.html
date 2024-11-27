@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./js/teamProfile.js"></script>
+    <link rel="stylesheet" href="./css/team-profile.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/player-grid.css" />
+    <title>Team Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="./index.html"><h2>NavBar</h2></a>
+            </div>
+            <div class="nav-items">
+                <ul class="overview">
+                    <li><a href="./index.html">Dashboard</a></li>
+                    <li><a href="./players.html">Players</a></li>
+                    <li><a href="./teams.html">Teams</a></li>
+                    <li><a href="./schedules.html">Games</a></li>
+                    <li><a href="./createTeam.html">Create Team</a></li>
+                    <li><a href="./createPlayer.html">Create Player</a></li>
+                    <li><a href="./createGame.html">Schedule Game</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <img id="ballparkImage" src="" alt="Ballpark Image" class="ballpark-img" />
+        <div class="profile">
+            <div class="team-info-wrapper">
+                <img id="teamLogo" src="" alt="Team Logo" class="team-logo" />
+                <div class="team-info">
+                    <h1 id="teamName"></h1>
+                    <p id="city"></p>
+                    <p id="state"></p>
+                    <p id="teamInitials"></p>
+                    <p id="ballpark"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-actions">
+            <button id="editTeamButton">Edit Team</button>
+            <button id="deleteTeamButton">Delete Team</button>
+        </div>          
+
+        <div class="players-container">
+            <h1>Team Roster</h1>
+            <div class="table-container">
+                <table id="playersTable">
+                    <thead>
+                        <tr>
+                            <th>Photo</th>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Bats</th>
+                            <th>Throws</th>
+                            <th>Number</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="playersTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./js/createPlayer.js"></script>
+    <script defer src="./js/script.js"></script>
+
+    <link rel="stylesheet" href="./css/create-player.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <title>Player Creator</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="./index.html"><h2>NavBar</h2></a>
+      </div>
+      <div class="nav-items">
+        <ul class="overview">
+          <li><a href="./index.html">Dashboard</a></li>
+          <li><a href="./players.html">Players</a></li>
+          <li><a href="./teams.html">Teams</a></li>
+          <li><a href="./schedules.html">Games</a></li>
+          <li><a href="./createTeam.html">Create Team</a></li>
+          <li><a href="./createPlayer.html">Create Player</a></li>
+          <li><a href="./createGame.html">Schedule Game</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <div class="hero">
+        <img src="path/to/your/ballpark.jpg" alt="Ballpark Hero Image" class="hero-image">
+    </div>
+    <div class="container">
+        <h1>Create A New Player</h1>
+        <form id="playerForm" enctype="multipart/form-data"> 
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+
+            <label for="team">Team:</label>
+            <select id="team" required>
+                <option value="">Select a team</option>
+            </select>
+
+            <label for="playerNumber">Player Number:</label>
+            <input type="number" id="playerNumber" required>
+
+            <label for="position">Position:</label>
+            <input type="text" id="position" required>
+
+            <label for="throws">Throws:</label>
+            <select id="throws" required>
+                <option value="right">Right</option>
+                <option value="left">Left</option>
+            </select>
+
+            <label for="hits">Hits:</label>
+            <select id="hits" required>
+                <option value="right">Right</option>
+                <option value="left">Left</option>
+            </select>
+
+            <label for="hometown">Hometown:</label>
+            <input type="text" id="hometown" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" required>
+
+            <label for="headshot">Headshot URL:</label>
+            <input type="text" id="headshot" required>
+
+            <label for="debut">Debut Year:</label>
+            <input type="number" id="debut" required>
+
+            <label for="actionPhoto">Action Photo:</label>
+            <input type="text" id="actionPhoto" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+            <p id="message"></p>
+        </form>      
+
+        <p id="message"></p>
+    </div>
+</body>
+</html>

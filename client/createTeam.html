@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./js/createTeam.js"></script>
+    <link rel="stylesheet" href="./css/create-team.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <title>Create Team</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="./index.html"><h2>NavBar</h2></a>
+      </div>
+      <div class="nav-items">
+        <ul class="overview">
+          <li><a href="./index.html">Dashboard</a></li>
+          <li><a href="./players.html">Players</a></li>
+          <li><a href="./teams.html">Teams</a></li>
+          <li><a href="./schedules.html">Games</a></li>
+          <li><a href="./createTeam.html">Create Team</a></li>
+          <li><a href="./createPlayer.html">Create Player</a></li>
+          <li><a href="./createGame.html">Schedule Game</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container">
+        <h1>Create A New Team</h1>
+        <form id="teamForm" class="form" action="#">
+            <label for="teamName">Team Name:</label>
+            <input type="text" id="teamName" name="teamName" required />
+        
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required />
+        
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required />
+        
+            <label for="teamInitials">Team Initials:</label>
+            <input type="text" id="teamInitials" name="teamInitials" required />
+
+            <label for="ballpark">Ballpark:</label>
+            <input type="text" id="ballpark" name="ballpark" />
+
+            <label for="teamLogo">Team Logo (URL):</label>
+            <input type="text" id="teamLogo" name="teamLogo" required />
+
+            <label for="ballparkImage">Ballpark Image (URL):</label>
+            <input type="text" id="ballparkImage" name="ballparkImage" required />
+        
+            <input type="submit" value="Create Team" />
+        </form>
+        
+        <p id="message"></p>
+    </div>
+</body>
+</html>

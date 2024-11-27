@@ -1,0 +1,81 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f2f4f7;
+    margin: 0;
+}
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 600;
+}
+
+input, select {
+    margin-bottom: 18px;
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #f7f9fc;
+    transition: border-color 0.2s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+#message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#message.success {
+    color: #28a745;
+}
+
+#message.error {
+    color: #dc3545;
+}

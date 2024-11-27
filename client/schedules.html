@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./js/schedule.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/schedules.css">
+    
+    <title>Schedule</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="./index.html"><h2>NavBar</h2></a>
+      </div>
+      <div class="nav-items">
+        <ul class="overview">
+          <li><a href="./index.html">Dashboard</a></li>
+          <li><a href="./players.html">Players</a></li>
+          <li><a href="./teams.html">Teams</a></li>
+          <li><a href="./schedules.html">Games</a></li>
+          <li><a href="./createTeam.html">Create Team</a></li>
+          <li><a href="./createPlayer.html">Create Player</a></li>
+          <li><a href="./createGame.html">Schedule Game</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container">
+      <div id="schedulesContainer">
+      </div>
+      <p id="message"></p>
+    </div>
+  </section>
+</body>
+</html>

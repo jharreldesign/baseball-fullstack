@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./js/scheduleProfile.js"></script>
+    <link rel="stylesheet" href="./css/schedule-profile.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <title>Scheduled Game</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="./index.html"><h2>NavBar</h2></a>
+          </div>
+          <div class="nav-items">
+            <ul class="overview">
+              <li><a href="./index.html">Dashboard</a></li>
+              <li><a href="./players.html">Players</a></li>
+              <li><a href="./teams.html">Teams</a></li>
+              <li><a href="./schedules.html">Games</a></li>
+              <li><a href="./createTeam.html">Create Team</a></li>
+              <li><a href="./createPlayer.html">Create Player</a></li>
+              <li><a href="./createGame.html">Schedule Game</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <div class="page-content">
+        <div class="game-section">
+            <img
+                src="ballparkImage.png"
+                alt="Ballpark"
+                class="ballpark-image"
+                id="ballparkImage"
+            />
+            <div class="game-header">
+                <div class="home-team-header">
+                    <img
+                        src="homeTeamLogo.png"
+                        alt="Home Team Logo"
+                        class="team-logo"
+                        id="homeTeamLogo"
+                    />
+                    <h2 id="homeTeamName"></h2>
+                </div>
+                <div class="game-details">
+                    <p id="gameDate"></p>
+                    <p id="ballpark"></p>
+                </div>
+                <div class="away-team-header">
+                    <img
+                        src="awayTeamLogo.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                        id="awayTeamLogo"
+                    />
+                    <h2 id="awayTeamName"></h2>
+                </div>
+            </div>
+            <div class="players-section">
+                <div class="players-container" id="homeTeamPlayersContainer">
+                    <h3>Home Team Players</h3>
+                </div>
+                <div class="players-container" id="awayTeamPlayersContainer">
+                    <h3>Away Team Players</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

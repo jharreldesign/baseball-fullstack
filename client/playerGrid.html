@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="team-profile.css">
+    <title>Team Roster</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/playerGrid.js"></script>
+
+    <link rel="stylesheet" href="./css/player-grid.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Team Roster</h1>
+        <table id="playersTable">
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Bats</th>
+                    <th>Throws</th>
+                    <th>Number</th>
+                </tr>
+            </thead>
+            <tbody id="playersTableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="teamController.js"></script>
+</body>
+</html>

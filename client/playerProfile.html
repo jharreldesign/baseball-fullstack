@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./js/playerProfile.js"></script>
+    <link rel="stylesheet" href="./css/player-profile.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <title>Player Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="./index.html"><h2>NavBar</h2></a>
+          </div>
+          <div class="nav-items">
+            <ul class="overview">
+              <li><a href="./index.html">Dashboard</a></li>
+              <li><a href="./players.html">Players</a></li>
+              <li><a href="./teams.html">Teams</a></li>
+              <li><a href="./schedules.html">Games</a></li>
+              <li><a href="./createTeam.html">Create Team</a></li>
+              <li><a href="./createPlayer.html">Create Player</a></li>
+              <li><a href="./createGame.html">Schedule Game</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <div class="container">
+        <div class="hero-image">
+            <img id="actionPhoto" class="player-action-photo" src="" alt="Action Photo of Player" />
+            <div class="player-info">
+                <img id="headshot" class="player-headshot" src="" alt="Player Headshot" />
+                <div class="player-details">
+                    <div class="player-number" id="playerNumber"></div>
+                    <h1 id="playerName"></h1>
+                    <p id="hometown"></p>
+                    <p id="hits"></p>
+                    <p id="throws"></p>
+                    <p id="debut"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats">
+            <h2>Career Stats</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Games</th>
+                        <th>Average</th>
+                        <th>Home Runs</th>
+                        <th>RBIs</th>
+                    </tr>
+                </thead>
+                <tbody id="careerStatsBody">
+                </tbody>
+            </table>
+
+            <h2>Recent Performance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Opponent</th>
+                        <th>Result</th>
+                        <th>Hits</th>
+                        <th>RBIs</th>
+                    </tr>
+                </thead>
+                <tbody id="recentPerformanceBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
